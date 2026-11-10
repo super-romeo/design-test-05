@@ -109,6 +109,24 @@ footer a{text-underline-offset:3px}
   a.cta,.btn,.field select{transition:none}
   a.cta:active,.btn:active{transform:none}
 }
+
+/* brief 6: shared content slots in the kit's idiom */
+img{display:block;max-width:100%;height:auto;object-fit:cover}
+.hero-pic{width:100%;aspect-ratio:3/2;margin:48px 0 0;border:1px solid var(--line);border-radius:21.6px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px;margin:32px 0 0}
+.facts dt{color:var(--muted);font-size:14px;line-height:20px}
+.facts dd{margin:4px 0 0;font-weight:600;font-size:16px;line-height:1.5}
+.h2-sub{color:var(--muted);font-size:20px;line-height:1.6;margin:-12px 0 28px;max-width:60ch}
+.start-text{color:var(--muted);margin:-12px 0 28px;max-width:var(--measure)}
+.card-pic{width:100%;aspect-ratio:4/3;border-radius:12px;margin:0 0 12px}
+.example .fine{margin:0 0 8px}
+.example-pic{width:100%;aspect-ratio:3/2;border-radius:12px;margin:20px 0 0}
+footer .logo{margin:0 0 8px}
+@media (max-width:760px){
+  .hero-pic{margin-top:32px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:24px}
+  .h2-sub{font-size:18px;line-height:1.55;margin-bottom:24px}
+}
 </style>
 </head>
 <body>
@@ -121,35 +139,38 @@ footer a{text-underline-offset:3px}
 
 <div class="wrap">
   <div class="hero">
+    <p class="eyebrow">Lorem ipsum dolor</p>
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
     <p class="sub">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
     <a class="cta" href="#">Lorem ipsum</a>
     <p class="cta-note">Excepteur sint occaecat · Cupidatat non proident sunt in culpa</p>
+    <img class="hero-pic" src="pic-hero.svg" alt="Image 1" width="1200" height="800">
+    <dl class="facts">
+      <div><dt>Lorem</dt><dd>Ipsum dolor sit amet</dd></div>
+      <div><dt>Dolor</dt><dd>Consectetur adipiscing</dd></div>
+      <div><dt>Amet</dt><dd>Sed do eiusmod</dd></div>
+      <div><dt>Elit</dt><dd>Tempor incididunt</dd></div>
+    </dl>
   </div>
 
   <section id="was">
     <h2>Dolor sit amet</h2>
+    <p class="h2-sub">Consectetur adipiscing elit sed do</p>
     <div class="grid">
-      <div class="card"><b>Lorem ipsum</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><b>Dolor sit amet</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><b>Consectetur elit</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><b>Sed do eiusmod</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
+      <div class="card"><img class="card-pic" src="pic-card-1.svg" alt="Image 2" width="800" height="600" loading="lazy"><b>Lorem ipsum</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
+      <div class="card"><img class="card-pic" src="pic-card-2.svg" alt="Image 3" width="800" height="600" loading="lazy"><b>Dolor sit amet</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
+      <div class="card"><img class="card-pic" src="pic-card-3.svg" alt="Image 4" width="800" height="600" loading="lazy"><b>Consectetur elit</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
+      <div class="card"><img class="card-pic" src="pic-card-4.svg" alt="Image 5" width="800" height="600" loading="lazy"><b>Sed do eiusmod</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
     </div>
   </section>
 
   <section id="beispiel">
     <h2>Consectetur adipiscing</h2>
-    <div class="example"><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    <div class="example"><div class="fine">Lorem ipsum dolor</div><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><img class="example-pic" src="pic-example.svg" alt="Image 6" width="1200" height="800" loading="lazy"></div>
     <a class="cta" href="#">Dolor sit amet</a>
   </section>
   <section id="opis">
     <h2>Sed ut perspiciatis unde</h2>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -172,6 +193,7 @@ footer a{text-underline-offset:3px}
   </section>
   <section id="start">
     <h2>At vero eos et accusamus</h2>
+    <p class="start-text">Et iusto odio dignissimos ducimus qui blanditiis.</p>
     <div class="start-form">
       <label class="field">Lorem ipsum dolor<select><option value="">— lorem —</option><option>Ipsum I</option><option>Ipsum II</option><option>Ipsum III</option><option>Ipsum IV</option></select></label>
       <a class="cta" href="#">Incipe</a>
@@ -180,6 +202,7 @@ footer a{text-underline-offset:3px}
 </div>
 
 <footer><div class="wrap">
+  <p class="logo">Lorem Ipsum</p>
   <p><a href="#">Privacy</a></p>
   <p class="muted">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
 </div></footer>
