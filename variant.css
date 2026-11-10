@@ -161,3 +161,7 @@ header a { border-radius: var(--radius-field); }
 #wat .tile > :not(.art) { grid-column: 2; }
 #wat .tile { padding: 1.5rem; }
 }
+
+/* ===== Hero 05: As now, facts as four cards ===== */
+main > section:first-of-type .facts { border-top: 0; padding-top: 0; gap: 1rem; }
+main > section:first-of-type .facts > div { padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-inner); box-shadow: var(--shadow); }
