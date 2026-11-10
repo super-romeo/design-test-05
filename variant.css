@@ -162,6 +162,12 @@ header a { border-radius: var(--radius-field); }
 #wat .tile { padding: 1.5rem; }
 }
 
-/* ===== Hero 05: As now, facts as four cards ===== */
-main > section:first-of-type .facts { border-top: 0; padding-top: 0; gap: 1rem; }
-main > section:first-of-type .facts > div { padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-inner); box-shadow: var(--shadow); }
+/* ===== v5: first screen 07 — picture in a window frame (three dots in the bar, lighter shadow) ===== */
+.window { margin: 0; align-self: center; overflow: hidden; background: var(--surface); border: 1px solid #c9d2e0; border-radius: var(--radius-inner);
+  box-shadow: 0 24px 48px -26px rgba(10, 21, 36, .30), 0 2px 6px rgba(10, 21, 36, .06); }
+.window::before { content: ""; display: block; height: 30px; border-bottom: 1px solid #d5dbe6;
+  background: radial-gradient(circle at 16px 15px, #b9c3d2 4px, transparent 5px), radial-gradient(circle at 32px 15px, #b9c3d2 4px, transparent 5px),
+    radial-gradient(circle at 48px 15px, #b9c3d2 4px, transparent 5px), #e9edf3; }
+.window .shot { border: 0; border-radius: 0; box-shadow: none; }
+/* ===== Density 05: As now, bigger headline ===== */
+:root { --text-display: clamp(2.5rem, 6.4vw, 4.75rem); --text-h2: clamp(1.9rem, 3.6vw, 3rem); }
