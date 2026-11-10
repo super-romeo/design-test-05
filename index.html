@@ -4,207 +4,121 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="canonical" href="https://05.design-test.dokuline.com/">
-<title>Layout 05 — design test</title>
-<meta name="description" content="Design test 05">
+<title>Font 05 — Onest — design test</title>
+<meta name="description" content="Design test 17">
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<style>
-/* Variant: current kit + Impeccable polish. Same look as the shared base, finished: measure, rhythm, states. */
-:root{--measure:68ch;--focus:#0086dd;--header-h:64px;
-  --bg:#fcfcfc;--ink:#05080b;--muted:#5c646f;--line:#dfe1e5;--card:#ffffff;--alt:#f7f8f9;
-  --accent:#006acf;--accent-soft:#d6efff;--accent-num:#b1ddff;--navy:#05080b;
-  --font:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-body{background:var(--bg);color:var(--ink);font-family:var(--font)}
-nav.top a{color:var(--muted)}
-footer{background:var(--alt);color:var(--ink);border-top:1px solid var(--line)}
-footer a{color:var(--accent)}
-footer .muted{color:var(--muted)}
-html{scroll-padding-top:calc(var(--header-h) + 16px)}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{font-size:16px;line-height:1.5}
-::selection{background:var(--accent-soft);color:var(--ink)}
-:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:6px}
-a.cta:focus-visible,.btn:focus-visible{border-radius:999px}
-select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-
-/* type scale — self-sufficient, matches the kit's values */
-h1{font-size:60px;line-height:1.1;letter-spacing:-.025em;text-wrap:balance;max-width:21ch}
-h2{font-size:40px;line-height:1.15;letter-spacing:-.025em;text-wrap:balance;margin:0 0 28px}
-h3{font-size:20px;line-height:1.4;letter-spacing:-.01em;text-wrap:balance}
-p{text-wrap:pretty}
-.sub{font-size:20px;line-height:1.6;max-width:60ch}
-.logo{font-size:17px}
-nav.top a{font-size:15px;padding:6px 2px;border-radius:6px}
-nav.top a:hover{color:var(--accent)}
-
-/* header and hero */
-.hero{padding:80px 0 56px}
-.hero .sub{margin-bottom:32px}
-.cta-note{font-size:14px;margin-top:12px}
-a.cta{transition:opacity .15s cubic-bezier(.4,0,.2,1),transform .15s cubic-bezier(.2,.8,.2,1)}
-a.cta:active,.btn:active{transform:translateY(1px)}
-a.cta:hover{opacity:.92}
-
-/* sections: steady rhythm */
-section{padding:80px 0}
-
-/* feature cards: balanced 2x2 instead of 3+1, buttons on one baseline */
-.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.card{gap:8px}
-.card > b{font-size:20px;line-height:1.4;letter-spacing:-.01em;margin:0}
-.card span{font-size:16px;line-height:1.5;max-width:42ch}
-.card .btn{margin-top:auto;font-size:14px;transition:background-color .15s cubic-bezier(.4,0,.2,1),border-color .15s cubic-bezier(.4,0,.2,1),transform .15s cubic-bezier(.2,.8,.2,1)}
-.card{padding:28px 28px 24px}
-.card > span{margin-bottom:16px}
-.btn:hover{border-color:var(--muted)}
-
-/* example: the story reads at body size inside a kit card */
-.example{background:var(--card);border:1px solid var(--line);border-radius:21.6px;padding:28px;max-width:calc(var(--measure) + 56px);margin:0 0 28px}
-.example p{margin:0;font-size:17px;line-height:1.6;color:var(--ink)}
-
-/* long-form text and FAQ: readable measure, more space above headings than below */
-#opis > p,#faq > p,#faq > h3{max-width:var(--measure)}
-#opis > p{margin:0 0 18px;font-size:17px;line-height:1.65;color:var(--ink)}
-#opis > p:last-child{margin-bottom:0}
-#faq > h3{margin:0;padding-top:24px;border-top:1px solid var(--line)}
-#faq > h2 + h3{border-top:0;padding-top:0}
-#faq > p{margin:8px 0 24px;color:var(--muted);font-size:16px;line-height:1.6}
-#faq > p:last-child{margin-bottom:0}
-
-/* start: label, select and button as one aligned field row */
-.start-form{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 16px}
-.field{display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:500;color:var(--ink)}
-.field select{font-size:16px;line-height:24px;padding:15px 44px 15px 16px;min-width:280px;min-height:56px;border-radius:12px;appearance:none;-webkit-appearance:none;cursor:pointer;
-  background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%235c646f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center;
-  transition:border-color .15s cubic-bezier(.4,0,.2,1)}
-.field select:hover{border-color:var(--muted)}
-.start-form a.cta{margin:0}
-
-footer{padding:32px 0}
-footer p{margin:0}
-footer a{text-underline-offset:3px}
-
-@media (max-width:760px){
-  h1{font-size:36px;line-height:1.15;max-width:none}
-  h2{font-size:30px;margin-bottom:24px}
-  .sub{font-size:18px;line-height:1.55}
-  .hero{padding:48px 0 40px}
-  section{padding:56px 0}
-  .grid{grid-template-columns:1fr;gap:16px}
-  .card{padding:24px}
-  .example{padding:22px}
-  .example p,#opis > p{font-size:16px}
-  .start-form{flex-direction:column;align-items:stretch}
-  .field select{min-width:0;width:100%}
-  .start-form a.cta{display:block;text-align:center}
-}
-@media (max-width:480px){
-  h1,h2{hyphens:auto;-webkit-hyphens:auto}
-}
-@media (prefers-reduced-motion:reduce){
-  a.cta,.btn,.field select{transition:none}
-  a.cta:active,.btn:active{transform:none}
-}
-
-/* brief 6: shared content slots in the kit's idiom */
-img{display:block;max-width:100%;height:auto;object-fit:cover}
-.hero-pic{width:100%;aspect-ratio:3/2;margin:48px 0 0;border:1px solid var(--line);border-radius:21.6px}
-.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px;margin:32px 0 0}
-.facts dt{color:var(--muted);font-size:14px;line-height:20px}
-.facts dd{margin:4px 0 0;font-weight:600;font-size:16px;line-height:1.5}
-.h2-sub{color:var(--muted);font-size:20px;line-height:1.6;margin:-12px 0 28px;max-width:60ch}
-.start-text{color:var(--muted);margin:-12px 0 28px;max-width:var(--measure)}
-.card-pic{width:100%;aspect-ratio:4/3;border-radius:12px;margin:0 0 12px}
-.example .fine{margin:0 0 8px}
-.example-pic{width:100%;aspect-ratio:3/2;border-radius:12px;margin:20px 0 0}
-footer .logo{margin:0 0 8px}
-@media (max-width:760px){
-  .hero-pic{margin-top:32px}
-  .facts{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:24px}
-  .h2-sub{font-size:18px;line-height:1.55;margin-bottom:24px}
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 </head>
 <body>
-<div style="position:relative;z-index:9999;display:flex;gap:16px;justify-content:center;align-items:center;padding:6px 12px;background:#05080b;color:#fff;font:600 13px/1.4 Inter,system-ui,sans-serif"><a href="https://04.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">← 04</a><span>Layout 05 / 21</span><a href="https://06.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">06 →</a></div>
+<div style="position:relative;z-index:9999;display:flex;gap:16px;justify-content:center;align-items:center;padding:6px 12px;background:#05080b;color:#fff;font:600 13px/1.4 system-ui,sans-serif"><a href="https://04.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">← 04</a><span>Font 05 / 8: Onest</span><a href="https://06.design-test.dokuline.com/" style="color:#b1ddff;text-decoration:none">06 →</a></div>
 
-<header><div class="wrap">
-  <div class="logo"><a href="#">Lorem Ipsum</a></div>
-  <nav class="top"><a href="#was">Dolor sit</a><a href="#">Amet</a><a href="#beispiel">Consectetur</a><a href="#start">Incipe</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html">Lorem Ipsum</a>
+  <nav aria-label="Lorem ipsum"><a href="#wat">Dolor sit</a><a href="#">Amet</a><a href="#voorbeeld">Consectetur</a><a href="#start">Incipe</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <p class="eyebrow">Lorem ipsum dolor</p>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-    <p class="sub">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-    <a class="cta" href="#">Lorem ipsum</a>
-    <p class="cta-note">Excepteur sint occaecat · Cupidatat non proident sunt in culpa</p>
-    <img class="hero-pic" src="pic-hero.svg" alt="Image 1" width="1200" height="800">
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Lorem ipsum dolor</p>
+      <h1 class="rise" style="--i:1">Lorem ipsum dolor sit amet, consectetur <span class="soft">adipiscing elit</span></h1>
+      <p class="rise" style="--i:2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+      <a class="button rise" style="--i:3" href="#">Lorem ipsum</a>
+      <p class="meta rise" style="--i:4">Excepteur sint occaecat · Cupidatat non proident sunt in culpa</p>
+    </div>
+
+    <img class="shot rise" style="--i:2" src="pic-hero.svg" alt="Image 1" width="1200" height="800">
     <dl class="facts">
       <div><dt>Lorem</dt><dd>Ipsum dolor sit amet</dd></div>
       <div><dt>Dolor</dt><dd>Consectetur adipiscing</dd></div>
       <div><dt>Amet</dt><dd>Sed do eiusmod</dd></div>
       <div><dt>Elit</dt><dd>Tempor incididunt</dd></div>
     </dl>
-  </div>
+  </section>
 
-  <section id="was">
-    <h2>Dolor sit amet</h2>
-    <p class="h2-sub">Consectetur adipiscing elit sed do</p>
-    <div class="grid">
-      <div class="card"><img class="card-pic" src="pic-card-1.svg" alt="Image 2" width="800" height="600" loading="lazy"><b>Lorem ipsum</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><img class="card-pic" src="pic-card-2.svg" alt="Image 3" width="800" height="600" loading="lazy"><b>Dolor sit amet</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><img class="card-pic" src="pic-card-3.svg" alt="Image 4" width="800" height="600" loading="lazy"><b>Consectetur elit</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
-      <div class="card"><img class="card-pic" src="pic-card-4.svg" alt="Image 5" width="800" height="600" loading="lazy"><b>Sed do eiusmod</b><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span><a class="btn" href="#">Lorem ipsum</a></div>
+  <section id="wat">
+    <div class="split">
+      <div class="stack"><h2>Dolor sit amet</h2></div>
+      <p>Consectetur adipiscing elit sed do</p>
+    </div>
+    <div class="bento">
+      <article class="tile stack wide reveal">
+        <div class="art"><img src="pic-card-1.svg" alt="Image 2" width="800" height="600"></div>
+        <h3>Lorem ipsum</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a class="button quiet" href="#">Lorem ipsum</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><img src="pic-card-2.svg" alt="Image 3" width="800" height="600"></div>
+        <h3>Dolor sit amet</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a class="button quiet" href="#">Lorem ipsum</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><img src="pic-card-3.svg" alt="Image 4" width="800" height="600"></div>
+        <h3>Consectetur elit</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a class="button quiet" href="#">Lorem ipsum</a>
+      </article>
+      <article class="tile stack wide reveal">
+        <div class="art"><img src="pic-card-4.svg" alt="Image 5" width="800" height="600"></div>
+        <h3>Sed do eiusmod</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a class="button quiet" href="#">Lorem ipsum</a>
+      </article>
     </div>
   </section>
 
-  <section id="beispiel">
-    <h2>Consectetur adipiscing</h2>
-    <div class="example"><div class="fine">Lorem ipsum dolor</div><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><img class="example-pic" src="pic-example.svg" alt="Image 6" width="1200" height="800" loading="lazy"></div>
-    <a class="cta" href="#">Dolor sit amet</a>
+  <section id="voorbeeld" class="split flip">
+    <div class="stack">
+      <p class="meta">Lorem ipsum dolor</p>
+      <h2>Consectetur adipiscing</h2>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a class="button" href="#">Dolor sit amet</a>
+    </div>
+    <img class="shot reveal" src="pic-example.svg" alt="Image 6" width="1200" height="800">
   </section>
-  <section id="opis">
-    <h2>Sed ut perspiciatis unde</h2>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<!-- seo-tekst:start -->
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Sed ut perspiciatis unde</h2></div>
+    <div class="stack">
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Quis autem vel eum</h2>
-    <h3>Neque porro quisquam est qui dolorem?</h3>
-    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-    <h3>Neque porro quisquam est qui dolorem?</h3>
-    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-    <h3>Neque porro quisquam est qui dolorem?</h3>
-    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-    <h3>Neque porro quisquam est qui dolorem?</h3>
-    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-    <h3>Neque porro quisquam est qui dolorem?</h3>
-    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-  </section>
-  <section id="start">
-    <h2>At vero eos et accusamus</h2>
-    <p class="start-text">Et iusto odio dignissimos ducimus qui blanditiis.</p>
-    <div class="start-form">
-      <label class="field">Lorem ipsum dolor<select><option value="">— lorem —</option><option>Ipsum I</option><option>Ipsum II</option><option>Ipsum III</option><option>Ipsum IV</option></select></label>
-      <a class="cta" href="#">Incipe</a>
+    <div class="stack"><h2>Quis autem vel eum</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Neque porro quisquam est qui dolorem?</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p></div>
+      <div class="split flip"><h3>Neque porro quisquam est qui dolorem?</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p></div>
+      <div class="split flip"><h3>Neque porro quisquam est qui dolorem?</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p></div>
+      <div class="split flip"><h3>Neque porro quisquam est qui dolorem?</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p></div>
+      <div class="split flip"><h3>Neque porro quisquam est qui dolorem?</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p></div>
     </div>
   </section>
-</div>
+<!-- seo-tekst:end -->
+  <section id="start" class="split">
+    <div class="stack">
+      
+      <h2>At vero eos et accusamus</h2>
+      <p>Et iusto odio dignissimos ducimus qui blanditiis.</p>
+    </div>
+    <div class="tile stack">
+      <label>Lorem ipsum dolor<select><option value="">— lorem —</option><option>Ipsum I</option><option>Ipsum II</option><option>Ipsum III</option><option>Ipsum IV</option></select></label>
+      <a class="button" href="#">Incipe</a>
+    </div>
+  </section>
+</main>
 
-<footer><div class="wrap">
-  <p class="logo">Lorem Ipsum</p>
+<footer><div class="shell">
+  <p><b>Lorem Ipsum</b></p>
   <p><a href="#">Privacy</a></p>
-  <p class="muted">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+  <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
 </div></footer>
 
 </body>
